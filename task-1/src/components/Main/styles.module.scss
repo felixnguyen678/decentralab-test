@@ -1,0 +1,43 @@
+.main {
+  background-color: white;
+  padding-top: 20px;
+  margin: 0 240px;
+
+  @media only screen and (max-width: 767px) {
+    margin: 15px; 
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    margin: 40px; 
+  }
+
+  .topContainer{
+
+    text-align: center;
+
+    .mass, .height {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .title {
+      margin-top: 15px;
+    }
+
+
+  }
+
+  .listContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 100px;
+    margin-top: 40px;
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);     
+    }
+    
+  }
+  
+}

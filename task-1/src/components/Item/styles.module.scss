@@ -1,0 +1,39 @@
+$itemBorder: 1px solid rgb(195, 195, 195);
+$colorRoundBorder: 1px solid rgb(195, 195, 195);
+
+.itemContainer {
+  border: $itemBorder;
+  border-radius: 8px;
+  margin: auto;
+  width: 80%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-sizing: content-box;
+
+  .name {
+    padding: 10px 20px;
+    border-bottom: $itemBorder;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .bodyContainer {
+    padding:  20px;
+  }
+
+  .gender, .colorListContainer, .films {
+    margin-top: 10px;
+  }
+
+  .colorListContainer {
+    display: flex;
+  }
+
+  .colorRound {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    border: $colorRoundBorder;
+    margin: 0 10px;
+  }
+}
